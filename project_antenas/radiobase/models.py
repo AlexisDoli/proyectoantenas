@@ -12,5 +12,5 @@ class Radiobase(models.Model):
     direccion = models.CharField(max_length = 250)
     coordenadas = models.CharField(max_length = 250)
 
-    def __str__(self):
+    def __unicode__(self):
         return "{} {}".format(self.altura, self.empresaduena, self.direccion, self.coordenadas)

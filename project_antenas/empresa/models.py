@@ -14,5 +14,5 @@ class Empresa(models.Model):
     radiobases = models.IntegerField
     antenas = models.ImageField
 
-    def __str__(self):
-        pass
+    def __unicode__(self):
+        return "{} {}".format(self.nombre, self.contacto, self.direccion, self.telefono, self.radiobases, self.antenas)
