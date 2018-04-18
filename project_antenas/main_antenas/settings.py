@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "antenas.apps.AntenasConfig",
+    "empresa.apps.EmpresaConfig",
+    "radiobase.apps.RadiobaseConfig"
 ]
 
 MIDDLEWARE = [

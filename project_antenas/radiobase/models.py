@@ -13,4 +13,4 @@ class Radiobase(models.Model):
     coordenadas = models.CharField(max_length = 250)
 
     def __str__(self):
-        pass
+        return "{} {}".format(self.altura, self.empresaduena, self.direccion, self.coordenadas)
