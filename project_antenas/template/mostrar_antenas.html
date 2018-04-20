@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Antenas</title>
+</head>
+<body>
+    <h2>Antenas</h2>
+    <table>
+        <thead>
+            <tr>Aplicacion</tr>
+            <tr>Fecuencia de operacion</tr>
+            <tr>Empresa dueña</tr>
+            <tr>Marca</tr>
+            <tr>Modelo</tr>
+        </thead>
+        <tbody>
+            {%- for antena in Antena%}
+            <tr>
+                <td>{{antena.aplicacion}}</td>
+                <td>{{antena.frecuencia_op}}</td>
+                <td>{{antena.empresaduena}}</td>
+                <td>{{antena.marca}}</td>
+                <td>{{antena.modelo_antena}}</td>
+            </tr>
+            {%- endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
