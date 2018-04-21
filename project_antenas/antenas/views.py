@@ -10,5 +10,8 @@ from .models import Antena
 # Create your views here.
 
 def antena_list(request):
-    template = loader.get_template('/templates', 'test.html')
-    return HttpResponse(template.render)
+    antenas = Antena.objects.all()
+    context = {
+        "antenas": antenas
+    }
+    return render(request, "mostrar_antenas.html", context)
