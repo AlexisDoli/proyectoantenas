@@ -10,9 +10,8 @@ class Radiobase(models.Model):
     altura = models.CharField(max_length = 12)
     empresaduena = models.CharField(max_length = 50 )
     direccion = models.CharField(max_length = 250)
-    coordenadas = models.CharField(max_length = 250)
-    latitud = models.DecimalField
-    longitud = models.DateField
+    latitud = models.CharField(max_length = 250)
+    longitud = models.CharField(max_length = 250)
 
     def __unicode__(self):
-        return "{} {}".format(self.altura, self.empresaduena, self.direccion, self.coordenadas)
+        return "{} {} {} {} {}".format(self.altura, self.empresaduena, self.direccion, self.latitud, self.longitud)

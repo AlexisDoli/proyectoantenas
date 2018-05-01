@@ -1,0 +1,24 @@
+{%extends "app/base.html"%}
+{%block content%}
+    <h2>Radio Bases</h2>
+    <table>
+        <thead>
+            <tr>Altura</tr>
+            <tr>Empresa dueña</tr>
+            <tr>Direccion</tr>
+            <tr>Latitud</tr>
+            <tr>Longitud</tr>
+        </thead>
+        <tbody>
+            {% for radiobase in radiobases%}
+            <tr>
+                <td>{{radiobase.altura}}</td>
+                <td>{{radiobase.empresaduena}}</td>
+                <td>{{radiobase.direccion}}</td>
+                <td>{{radiobase.latitud}}</td>
+                <td>{{radiobase.longitud}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{%endblock%}
